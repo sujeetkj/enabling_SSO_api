@@ -1,0 +1,22 @@
+Subject: Read-only access to CRDP_DIST schema — LLE (DEV/SIT/UAT) & PROD
+
+Hi <Name/Team>,
+
+Please grant read-only access to the CRDP_DIST schema. CRDP_WEB and CRDP_DIST are in the same database.
+
+Service IDs
+
+LLE (DEV/SIT/UAT, etc.): <SERVICE_ID_LLE>
+
+PROD: <SERVICE_ID_PROD>
+
+Request
+
+Grant read-only access (e.g., SELECT on required tables/views/materialized views; SELECT on sequences if applicable) to CRDP_DIST for the above service IDs.
+
+We can use schema-qualified names or synonyms—happy to follow your standard.
+
+If you need a specific object list for least-privilege, we can provide it. Kindly proceed and let us know if any additional details are required from our side.
+
+Best regards,
+Sujeet
