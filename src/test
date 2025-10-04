@@ -1,1 +1,63 @@
+{
+  "responseCode": "SUCCESS",
+  "responseMessage": "REST Successfully Executed and sent the response",
+  "totalRecords": 1277,
+  "pageInfo": {
+    "pageNo": 0,
+    "pageSize": 5,
+    "totalPageCount": 256
+  },
+  "content": [
+    {
+      "batchId": 1310,
+      "runId": null,
+      "reportDate": "12/31/2022",
+      "submissionDateEST": "10/01/2025 09:24:16 AM",
+      "runDateGMT": "10/01/2025 09:24:16 AM",
+      "submittedBy": "Chen Qiang",
+      "status": "Draft",
+      "comments": "test"
+    },
+    {
+      "batchId": 1309,
+      "runId": 938,
+      "reportDate": "12/31/2022",
+      "submissionDateEST": "09/23/2025 07:35:22 AM",
+      "runDateGMT": "09/23/2025 03:35:15 AM",
+      "submittedBy": "Arulmani Shobana",
+      "status": "Failed",
+      "comments": "clone 929"
+    },
+    {
+      "batchId": 1308,
+      "runId": 937,
+      "reportDate": "12/31/2022",
+      "submissionDateEST": "09/19/2025 05:32:00 PM",
+      "runDateGMT": "09/19/2025 10:32:04 PM",
+      "submittedBy": "Sankpal Aruna",
+      "status": "Failed",
+      "comments": "tes"
+    },
+    {
+      "batchId": 1307,
+      "runId": 936,
+      "reportDate": "12/31/2022",
+      "submissionDateEST": "09/19/2025 09:29:56 AM",
+      "runDateGMT": "09/19/2025 01:30:01 PM",
+      "submittedBy": "Arulmani Shobana",
+      "status": "Failed",
+      "comments": "Test 929"
+    },
+    {
+      "batchId": 1306,
+      "runId": 935,
+      "reportDate": "12/31/2022",
+      "submissionDateEST": "09/18/2025 07:42:05 AM",
+      "runDateGMT": "09/18/2025 11:42:10 AM",
+      "submittedBy": "Arulmani Shobana",
+      "status": "Completed",
+      "comments": "test"
+    }
+  ]
+}
 
