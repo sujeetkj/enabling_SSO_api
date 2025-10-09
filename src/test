@@ -1,9 +1,12 @@
 Hi Team,
 
-As discussed, we will proceed with the UAT and PROD migration planning after the successful completion of the DEV environment migration.
+Below is the proposed rollout sequence for the ERDP migration:
+DEV → UAT2 → SIT → UAT → PROD → DR
 
-Once the DEV migration is completed, we will roll out the UAT2 migration, since the SIT environment will be utilized for releases scheduled in the December 2025 pipeline.
-Before initiating the UAT rollout, we will communicate the plan with POs and relevant stakeholders for review and alignment.
+We will begin with the DEV environment migration, followed by UAT2, since SIT will continue to support the releases already scheduled in the December 2025 pipeline.
+Once the DEV migration is completed and validated, we will initiate the UAT and PROD migration planning.
+
+Before the UAT rollout, we will communicate the detailed plan with POs and other relevant stakeholders to ensure proper coordination and readiness across teams.
 
 We are currently targeting the completion of the DEV environment migration by November 15, 2025.
-A follow-up meeting is scheduled for Tuesday to finalize the UAT and PROD migration timelines once DEV progress is reviewed.
+A follow-up meeting is scheduled for Tuesday to review DEV progress and finalize the UAT and PROD migration timelines.
