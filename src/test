@@ -1,1 +1,14 @@
+Hi Mayank,
 
+Thanks for raising this.
+
+We had a quick discussion with Navpreet, and based on that, UAT2 was initially considered for the migration. However, we are open to switching to any UAT environment that is available and suitable for testing.
+
+Our understanding was that UAT1 is currently being utilized more frequently, so UAT2 appeared to be the feasible option at the time.
+
+We still have time to finalize the environment after the DEV migration, and we can revisit and confirm this during next Tuesday’s meeting.
+
+@Mohammed, @Venkata — please share your input on which UAT environment would be most appropriate for this activity.
+
+Thanks & Regards,
+Sujeet Jaiswal
