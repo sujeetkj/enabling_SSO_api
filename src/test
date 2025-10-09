@@ -1,13 +1,18 @@
-Hi Venkat,
+package com.example.dto;
 
-Thanks for the clarification.
+import lombok.Data;
 
-Regarding the container setup, I believe the DevOps team would be in a better position to confirm if separate containers are being planned for each URL. @Kavya may be able to share more details on this.
+@Data
+public class SummaryDTO {
 
-As Mayank mentioned, since Wave7 testing is ongoing in UAT2, and this migration involves application changes (to accommodate the new domain), it’s important to assess any potential impact on the ongoing testing cycle.
-We can review this further and gain more clarity during the Tuesday meeting before proceeding.
+    private int processId;
+    private String runId;
+    private String reportDate;
+    private String submissionDate;
+    private String reportRunDate;
+    private String submittedBy;
+    private String status;
+    private String errorMsg;
+    private String comments;
+}
 
-Also, the reason we are considering the UAT environment instead of SIT is that POs primarily use and have better visibility in UAT, which helps with validation and coordination during migration.
-
-Thanks & Regards,
-Sujeet Jaiswal
