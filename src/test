@@ -1,18 +1,74 @@
-package com.example.dto;
+package com.yourpkg.entity;
 
-import lombok.Data;
+import jakarta.persistence.*;
+import lombok.*;
 
-@Data
-public class SummaryDTO {
+import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 
-    private int processId;
+@Entity
+@Table(name = "MODL_PTFOL_INPT_PARM", schema = "CRDP_WEB")
+@Getter @Setter @Builder
+@NoArgsConstructor @AllArgsConstructor
+public class ModelPtfolInptParm {
+
+    // Surrogate key NUMBER(32)
+    @Id
+    @Column(name = "MODL_PTFOL_INPT_PARM_KY", nullable = false, precision = 32, scale = 0)
+    private BigDecimal key;                         // ← “Batch ID” on the UI
+
+    // Row status (Active/Deleted/Inactive) via lookup
+    @Column(name = "STAT_LKUP_CD", nullable = false, length = 30)
+    private String statLkupCd;
+
+    // Creator + creation timestamp (DB clock)
+    @Column(name = "CREAT_USR_TX", nullable = false, length = 16)
+    private String creatUsrTx;
+
+    @Column(name = "CREAT_TS", nullable = false)
+    private LocalDateTime creatTs;
+
+    // Last modifier + modified timestamp (DB clock)
+    @Column(name = "MOD_USR_TX", nullable = false, length = 16)
+    private String modUsrTx;
+
+    @Column(name = "MOD_TS", nullable = false)
+    private LocalDateTime modTs;
+
+    // Retention / return code (lookup) — VARCHAR2 in your DDL
+    @Column(name = "RTN_CD", length = 6)            // length optional; set to your exact size
+    private String rtnCd;
+
+    // Use Case lookup (e.g., CTPA / EUT)
+    @Column(name = "USE_CAS_LKUP_CD", nullable = false, precision = 32, scale = 0)
+    private BigDecimal useCasLkupCd;
+
+    // Job submit + report date + job complete
+    @Column(name = "JOB_SUBMIT_DT", nullable = false)
+    private LocalDateTime jobSubmitDt;
+
+    @Column(name = "RPT_DT", nullable = false)
+    private LocalDate rptDt;                         // If your column is TIMESTAMP, switch to LocalDateTime
+
+    // Hash of submitted parameters (as text in DDL)
+    @Column(name = "REQ_HASH_KY", nullable = false, length = 128)
+    private String reqHashKy;
+
+    // Run id for model execution
+    @Column(name = "RUN_ID", length = 20)
     private String runId;
-    private String reportDate;
-    private String submissionDate;
-    private String reportRunDate;
-    private String submittedBy;
-    private String status;
-    private String errorMsg;
-    private String comments;
-}
 
+    // Raw submitted parameters as JSON (CLOB)
+    @Lob
+    @Column(name = "INPT_PARM_JSON", nullable = false)
+    private String inptParmJson;
+
+    // Completion date/time
+    @Column(name = "JOB_CMPLT_DT", nullable = false)
+    private LocalDateTime jobCmpltDt;
+
+    // Job status code (Draft/Submitted/Success/Failed)
+    @Column(name = "JOB_STAT_CD", nullable = false, length = 30)
+    private String jobStatCd;
+}
