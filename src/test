@@ -1,13 +1,22 @@
-public static GridSummary toDto(ModelPtfolInptParm e) {
-        GridSummary dto = new GridSummary();
-        dto.setBatchId(e.getKey().intValue());                 // or Long if you prefer
-        dto.setRunId(e.getRunId());
-        dto.setReportDate(formatDate(e.getReportDate()));
-        dto.setSubmissionDate(formatDateTime(e.getJobSubmitDt()));
-        dto.setReportRunDate(formatDateTime(e.getJobCmpltDt())); // or MOD_TS
-        dto.setSubmittedBy(e.getCreatedBy());
-        dto.setStatus(e.getJobStatusCd());                     // map code→label if needed
-        dto.setErrorMsg(null);
-        dto.setComments(null);
-        return dto;
-    }
+Hi All,
+
+Following today’s discussion, please find the updated plan for the CRDP→ERDP migration:
+
+The CRDP→ERDP migration for environments will be executed after the Q4 release sign-offs of SIT and UAT.
+
+Q4 Release Sign-Offs:
+
+SIT Sign-Off: November 10, 2025
+
+UAT Sign-Off: November 17, 2025
+
+Migration Sign-Offs (CRDP→ERDP):
+
+SIT Environment: December 29, 2025
+
+UAT Environment: January 5, 2026
+
+This sequence ensures that migration will occur only after the Q4 release environments have been validated and signed off, minimizing any overlap with ongoing release activities.
+
+Thanks & Regards,
+Sujeet Jaiswal
