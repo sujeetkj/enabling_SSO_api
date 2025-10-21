@@ -1,16 +1,1 @@
-Hi David,
 
-Thanks for your quick response!
-
-Sure — let me clarify. The new role ERDP_CTPA_ADMIN was created and tested under the LLE namespace in GES (Authorization/Entitlement Services) for the CTPA feature of the CRDP/ERDP Platform (AIT 72882).
-
-Now, we’d like the same role to be provisioned in the Production namespace so it’s available for use in the production environment as well.
-
-In short, the action needed is to replicate this role definition (including resource /globalaccess/admin and action readwrite) under the Production namespace.
-
-If you’re not the right contact for pushing roles to Production, could you please let me know who I should reach out to or if a ServiceNow/Entitlement request needs to be opened?
-
-Thanks again for your help.
-
-Best regards,
-Sujeet Jaiswal
