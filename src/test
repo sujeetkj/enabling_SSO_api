@@ -1,1 +1,10 @@
+| **Environment** | **Start Date**  | **End Date / Sign-Off** | **Remarks**                                                                                  |
+| --------------- | --------------- | ----------------------- | -------------------------------------------------------------------------------------------- |
+| **DEV**         | **Nov 18 2025** | **Dec 02 2025**         | DEV migration and validation per your roadmap tab (“Nov 18 2025 ERDP migration for DEV env”) |
+| **SIT**         | **Dec 03 2025** | **Dec 17 2025**         | SIT migration and validation; aligns with SIT sign-off milestone on **Dec 29 2025**          |
+| **UAT**         | **Dec 18 2025** | **Jan 01 2026**         | UAT migration window leading into sign-off **Jan 05 2026**                                   |
+| **UAT DR**      | **Jan 02 2026** | **Jan 05 2026**         | Immediate DR environment migration after UAT completion                                      |
+| **UAT 3**       | **Jan 06 2026** | **Jan 20 2026**         | Parallel validation for additional UAT sandbox                                               |
+| **PROD**        | **Jan 21 2026** | **Feb 04 2026**         | Production migration and cutover window                                                      |
+| **PROD DR**     | **Feb 05 2026** | **Feb 08 2026**         | Immediate DR migration following PROD completion                                             |
 
