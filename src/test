@@ -1,1 +1,18 @@
+Hi Om,
 
+Thanks for the note.
+
+We currently do not have a redirect feature in place today.
+
+After Venkat raised the question about keeping both URLs active at the same time, we did consider a possible redirect approach from the old URL to the new one. However, implementing that would require additional changes, proper planning, and a clear roadmap — including development, deployment, and testing. This is not part of today’s migration scope.
+
+My earlier question to the team was essentially:
+
+If we need a redirect or want both URLs to remain usable, then we should hold today’s migration, revisit the design, and include the redirect solution in a future release.
+
+If we are aligned with only the new ERDP DEV URL being active, then we can proceed with today’s migration as originally planned and decommission the old URL.
+
+Please let me know how you’d like to proceed.
+
+Thanks and regards,
+Sujeet
