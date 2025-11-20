@@ -1,14 +1,1 @@
-Hi Vidya,
 
-Thanks for calling this out.
-
-The change to ERDP was not intended for this SIT drop. For this release, we deployed new images to SIT specifically for CTPA integration testing. In parallel, we are working on ERDP migration and Data Lineage activities for the same overall release cycle. Because these efforts are happening concurrently, it appears that some partially developed ERDP components may have been included in the SIT environment.
-
-Based on our understanding, this does not represent a planned update as part of the current SIT deployment, but rather an early/partial ERDP change that is targeted for an upcoming release.
-
-At this point, I am not sure if this warrants creating a defect, as the next scheduled deployment to SIT will align more closely with the upcoming release and should address any “half-baked” components as part of the full feature drop.
-
-Please let me know if you’d like us to review this further or validate during the next SIT deployment cycle.
-
-Thanks,
-Sujeet
