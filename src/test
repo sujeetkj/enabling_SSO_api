@@ -1,12 +1,1 @@
-Hi Kavya,
 
-Thank you for the detailed update.
-
-From what I see, this aligns with the DEV environment migration we had planned in the roadmap. We can continue monitoring the applications that still need some stabilization, but at this point it looks like the DEV cutover has gone through as expected, so no revert should be needed on the DEV environment.
-
-It may be helpful for us to meet for a quick review and, based on everyone’s inputs, finalize the sign-off before we move on to the SIT migration plan.
-
-Thanks again to everyone for the teamwork and coordination.
-
-Regards,
-Sujeet
