@@ -1,1 +1,10 @@
+Hi UI Team,
 
+During today’s DSU, QA raised a concern that the recent SIT deployment includes partially implemented Data Lineage features. To avoid any incomplete functionality in the January 2025 release, please disable these changes in the main development branch and continue Data Lineage work in a separate branch until we confirm it is targeted for the post-January 2026 release.
+
+The January 2025 release will focus on the Angular migration (FE), issue fixes reported for the platform application after the Angular migration, and the CTPA and ERDP migration efforts.
+
+Please ensure that Data Lineage—or any other ongoing development not part of the January 2025 scope—does not bleed into the January release.
+
+Thanks,
+Sujeet
