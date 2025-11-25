@@ -1,1 +1,20 @@
+Hi Team,
 
+We had a quick call with the feature leads regarding the SIT environment ERDP migration. Each team will coordinate with their respective QA teams to confirm readiness for the migration scheduled for 2nd December 2025.
+
+Originally, the migration was planned for 1st December. However, due to the planned PROD release on the 1st, we agreed to move SIT migration to the 2nd, allowing teams to complete final QA coordination.
+
+In terms of readiness:
+
+Green Pages application QA has confirmed they are good for the 2nd December migration.
+
+CDC side – Venkat has also confirmed readiness for the 2nd.
+
+We are currently awaiting the FE team’s confirmation from Suhil to finalize the migration date.
+
+As discussed, Laxmi will take ownership of all communication going forward, including notifying stakeholders ahead of each environment migration.
+
+More updates to follow.
+
+Thanks,
+Sujeet
