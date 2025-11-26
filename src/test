@@ -1,1 +1,39 @@
+Remediation Write-up for Acceptance Criteria #2 and #3
 
+Remediation for Requirement #2 – Ensure compliance with data-privacy regulations during user-data collection
+
+Based on confirmation from the Product Owner and validation from the Glassbox team (email references attached), CRDP UI does not collect or display any PII/PHI/NPI/sensitive information that would require masking or additional protection before instrumentation.
+Glassbox will only capture standard interaction-level events such as navigation paths, clicks, page views, and time spent—none of which contain sensitive attributes or user-identifiable data.
+
+Glassbox team has explicitly confirmed that:
+
+All captured data is tied only to the user’s BankID that is already authorized via application roles.
+
+No masking is required because CRDP UI does not expose or transmit sensitive fields to Glassbox.
+
+Access to Glassbox data is role-based and restricted to approved personas only.
+
+Therefore, requirement #2 is fully satisfied through existing product design and Glassbox’s role-controlled access model.
+
+Remediation for Requirement #3 – Provide real-time analytics dashboards with actionable insights
+
+The real-time analytics capability for CRDP UI will be provided directly through the Glassbox Portal Dashboard, not through CRDP UI itself.
+Once instrumentation is active for CRDP UI (AIT-72882), all analytics related to session behavior, user journeys, clicks, and heatmaps will automatically appear under the application profile in Glassbox.
+
+To access these dashboards, users must:
+
+Submit an ARM request to obtain appropriate analytics roles for Glassbox.
+
+Select CRDP UI (AIT-72882) as the application they need access to.
+
+Once approved, users will be able to view all real-time dashboards and insights through the Glassbox platform.
+
+No additional development or UI integration on CRDP side is required for this functionality.
+
+Therefore, requirement #3 is fulfilled through the Glassbox platform’s native analytics capabilities, with access provisioned via ARM request workflow.
+
+🔒 Final Consolidated Statement (Short Version for Jira)
+
+Req #2: CRDP UI does not expose any sensitive data requiring protection prior to Glassbox ingestion. Glassbox team and PO have both confirmed no PII/PHI/NPI is involved. All data capture is limited to interaction-level metadata, and access is restricted via role-based Glassbox permissions.
+
+Req #3: Real-time analytics dashboards are provided on the Glassbox portal. Users must raise an ARM request to obtain access to the analytics for AIT-72882. No CRDP UI changes are required.
