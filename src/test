@@ -1,1 +1,15 @@
+Hi Neharika,
 
+Yes — that was exactly the issue.
+
+The job with run_id = 74, which was manually moved to INPROGRESS, was preventing the API from submitting any new jobs. Our API is designed to submit a new job only when there are no jobs in INPROGRESS status on the model side.
+Because run_id 74 remained stuck in INPROGRESS, all subsequent submissions stayed in SUBMITTED state and did not progress.
+
+Once you corrected the status for run_id 74, the API was able to resume processing. As you can now see on the screen, all the previously blocked jobs have moved forward and are showing as COMPLETED.
+
+We will continue to look into the UI issue you mentioned regarding GCP ID not displaying after selecting a financed emission reporting period.
+
+Thanks again for the update and for validating this in DEV.
+
+Best regards,
+Sujeet
